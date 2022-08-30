@@ -112,33 +112,54 @@ html {
     height: 480px;
     width: 1200px;
     position: relative;
+    overflow: hidden;
 }
-
-
-/* .content-shape {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 20px;
-    height: 170px;
-    background-color: red;
-}
-
-.content-shape::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 100%;
-    width: 120px;
-    height: 170px;
-    background-color: green;
-    border: 100px solid;
-} */
 
 .content-wrapper-image {
     width: 100%;
     height: 100%;
     background: url(../img/tri\ ân\ anh\ hùng\ dân\ tộc.jpg) center center / cover no-repeat;
+}
+
+.content-shape {
+    position: absolute;
+    bottom: 0;
+    left: -5%;
+    width: 300px;
+    height: 170px;
+    transform: skew(35deg);
+    background: linear-gradient(45deg, rgba(50, 5, 76, 1) 0%, rgba(138, 36, 151, 0.950315160243785) 100%);
+    box-shadow: 45px 35px 0 0 #015dac;
+}
+
+.content-shape::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    transform: skew(-35deg);
+    border-radius: 100%;
+    background-image: url(../img/tải\ xuống.png);
+    background-size: cover;
+}
+
+.content-shape::after {
+    content: "Chương trình tri ân các anh hùng dân tộc";
+    font-family: 'Dancing Script', cursive;
+    color: rgb(204, 204, 14);
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 135px;
+    height: 170px;
+    transform: skew(-35deg);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .centent-text {
