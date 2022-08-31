@@ -1,0 +1,137 @@
+:root {
+    --primary-color: rgb(134, 182, 22);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background-color: #eee;
+}
+
+.container {
+    margin: 0 180px;
+    padding: 0 8px;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.container__heading {
+    text-align: center;
+    color: #750909;
+    font-size: 2.2rem;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+
+.content::before {
+    content: "";
+    background: url(../img/600x401-5097_g2a085112628jpg.jpg.crdownload) center center / cover no-repeat;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.content-left {
+    margin: 40px 100px 0 40px;
+    width: 420px;
+    height: 400px;
+    background-color: rgba(5, 96, 63, 0.5);
+    z-index: 1;
+    position: relative;
+}
+
+.content-img {
+    position: absolute;
+    top: 12%;
+    right: 8%;
+    width: 75%;
+    box-shadow: 2px 2px 6px 0 rgb(157, 155, 155);
+}
+
+.content-right {
+    flex: 1;
+    opacity: 0.6;
+    padding: 60px 20px 0 0;
+}
+
+.content-right-name {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+.content-right-name__heading {
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.content-right__icon {
+    font-size: 5rem;
+    color: var(--primary-color);
+    margin: 12px 0;
+}
+
+.content-right__desc {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.content-right-sport-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 30px 0 15px;
+    color: var(--primary-color);
+}
+
+.content-right-sport-item {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-right-sport__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.6rem;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 4px dotted var(--primary-color);
+}
+
+.content-right-sport-desc {
+    text-transform: uppercase;
+}
+
+.content-right-sport__category {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.content-right-sport__name {
+    font-size: 2.2rem;
+}
