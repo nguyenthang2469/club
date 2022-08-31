@@ -40,7 +40,7 @@ html {
 
 .content::before {
     content: "";
-    background: url(../img/600x401-5097_g2a085112628jpg.jpg.crdownload) center center / cover no-repeat;
+    background: url(../img/600x401-5097_g2a085112628jpg.jpg) center center / cover no-repeat;
     opacity: 0.3;
     position: absolute;
     top: 0;
