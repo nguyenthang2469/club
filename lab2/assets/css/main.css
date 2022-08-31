@@ -136,14 +136,24 @@ html {
     content: "";
     width: 40px;
     height: 40px;
-    background-color: red;
     position: absolute;
     bottom: 10%;
     right: 10%;
     transform: skew(-35deg);
     border-radius: 100%;
-    background-image: url(../img/tải\ xuống.png);
+    background-image: url(../img/9610b6bf8c35496b1024.png);
     background-size: cover;
+    animation: rotate 2s linear infinite;
+    border: 2px solid #fff;
+}
+
+@keyframes rotate {
+    from {
+        transform: skew(-35deg) rotate(0);
+    }
+    to {
+        transform: skew(-35deg) rotate(360deg);
+    }
 }
 
 .content-shape::after {
@@ -168,44 +178,3 @@ html {
     left: 0;
     display: none;
 }
-
-
-/*.trapezium-front {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-bottom: 200px solid rgb(158, 58, 235);
-    border-left: 25px solid transparent;
-    border-right: 70px solid transparent;
-    height: 100px;
-    width: 300px;
-    text-align: center;
-    font-family: 'Sriracha', cursive;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 45px;
-    background-color: #fff;
-}
-
-.trapezium-front::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 230px;
-    height: 200px;
-    display: block;
-    background: linear-gradient(42deg, rgba(0, 0, 0, 0.49933476808692223) 0%, rgba(158, 58, 235, 0.5) 100%);
-}
-
-.trapezium-behind {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-bottom: 150px solid rgb(30, 61, 215);
-    border-left: 25px solid transparent;
-    border-right: 60px solid transparent;
-    height: 100px;
-    width: 380px;
-} */
